@@ -56,7 +56,7 @@
         .particles {
             position: fixed;
             top: 0;
-            left: 0;
+            left: 0;F
             width: 100%;
             height: 100%;
             z-index: -1;
@@ -974,42 +974,64 @@
             <span class="close-btn" onclick="closeModal('modal-concept')">&times;</span>
             <h2>Plugin Concept</h2>
             <div class="divider" style="margin: 1rem 0;"></div>
-            <p>The main idea of this plugin is for players that love the idea of pvp, wars and battles, so they can express their skill and strength, /n <strong>but.. </strong>
-            its also made for the players that love grinding, try to ignore pvp, and just want to live in peace while feeling and <strong> BEING POWERFUL!</strong> /n Ascension is all about ascending from being nothing, to being everything.</p>
-            <div class="divider" style="margin: 1rem 0;"></div>
+            <p>The main idea of this plugin is for players that love the idea of pvp, wars and battles, so they can express their skill and strength,  <strong>but.. </strong>
+            its also made for the players that love grinding, try to ignore pvp, and just want to live in peace while feeling and <strong> BEING POWERFUL!</strong>  Ascension is all about ascending from being nothing, to being everything.</p>
             <h2>Concept</h2>
-            <div class="divider" style="margin: 1rem 0;"></div>
-            <p>Ascension is a pvp & grinding-based plugin where players have to either get a specific amount of kill streak to <strong> earn rebirth points</strong> which lets them unlock various abilities /n or grind them.
-            you can also earn rebirth points by crafting them using their custom recipe which is found in our discord server, when rebirthed you will be met with a menu and 3 abilities which you can pick 1 of them. /n
+            <p>Ascension is a pvp & grinding-based plugin where players have to either get a specific amount of kill streak to <strong> earn rebirth points</strong> which lets them unlock various abilities  or grind them.
+            you can also earn rebirth points by crafting them using their custom recipe which is found in our discord server, when rebirthed you will be met with a menu and 3 abilities which you can pick 1 of them. 
             with each rebirth, the abilities get better and better. There are 18 abilities and 6 rebirth levels which we plan on upgrading in the future.</p>
         </div>
     </div>
 
-    <div id="modal-commands" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal('modal-commands')">&times;</span>
-            <h2>Commands &amp; Utilities</h2>
-            <div class="divider" style="margin: 1rem 0;"></div>
-            
-            <h3>Home</h3>
-            <p>Manage your personal teleportation points.</p>
-            
-            <h3>Teleport</h3>
-            <p>Request and manage teleportation to other players or locations.</p>
-            
-            <h3>Team</h3>
-            <p>Create, join, and manage your alliances with other players.</p>
-            
-            <h3>Combat</h3>
-            <p>Toggle combat-related settings and view your current PvP statistics.</p>
-            
-            <h3>Ascension</h3>
-            <p>View your rebirth progress, manage your ability loadouts, and access ascension menus.</p>
-            
-            <h3>Chat</h3>
-            <p>Switch between global, team, and local chat channels, and customize your messaging experience.</p>
-        </div>
+<div id="modal-commands" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal-commands')">&times;</span>
+        <h2>Commands &amp; Utilities</h2>
+        <div class="divider" style="margin: 1rem 0;"></div>
+
+        <h3>⚔️ Combat &amp; Mechanics</h3>
+        <table class="modal-table">
+            <tr>
+                <th>Command</th>
+                <th>What it does</th>
+            </tr>
+            <tr><td>/streak</td><td>Opens a GUI menu showing your current kill streak and how many kills you need for the next Rebirth Point.</td></tr>
+            <tr><td>/streak-toggle</td><td>Toggles whether your streak tag (e.g., [5 🔥]) is visible above your head to other players.</td></tr>
+            <tr><td>/rebirth</td><td>Opens the Rebirth Panel to spend Rebirth Points and select new Ascension Abilities.</td></tr>
+            <tr><td>/ability-set &lt;player&gt; &lt;ability&gt;</td><td>(Admin) Forcefully sets a player's active Ascension Ability.</td></tr>
+        </table>
+
+        <h3>🏠 Teleportation &amp; Homes</h3>
+        <table class="modal-table">
+            <tr>
+                <th>Command</th>
+                <th>What it does</th>
+            </tr>
+            <tr><td>/home</td><td>Opens the GUI Home Panel to set, teleport to, rename, or delete your homes.</td></tr>
+            <tr><td>/tpa &lt;player&gt;</td><td>Sends a teleport request to another player.</td></tr>
+            <tr><td>/tpaccept</td><td>Accepts a pending teleport request.</td></tr>
+            <tr><td>/tpdeny</td><td>Denies a pending teleport request.</td></tr>
+            <tr><td>/rtp</td><td>Teleports you to a random safe location in the world (3000 block radius).</td></tr>
+            <tr><td>/back</td><td>Returns you to the location of your last natural death.</td></tr>
+        </table>
+
+        <h3>🛡️ Social &amp; Teams</h3>
+        <table class="modal-table">
+            <tr>
+                <th>Command</th>
+                <th>What it does</th>
+            </tr>
+            <tr><td>/team create &lt;name&gt;</td><td>Start a new team.</td></tr>
+            <tr><td>/team invite &lt;player&gt;</td><td>Invite someone to join your team.</td></tr>
+            <tr><td>/team accept &lt;team&gt;</td><td>Join a team you were invited to.</td></tr>
+            <tr><td>/team chat</td><td>Toggle between global and private team chat.</td></tr>
+            <tr><td>/team leave / disband / kick / rename / promote</td><td>Manage your team and its members.</td></tr>
+            <tr><td>/msg &lt;player&gt; &lt;message&gt;</td><td>Sends a private message to another player.</td></tr>
+            <tr><td>/reply &lt;message&gt;</td><td>Quick-reply to the last person who messaged you.</td></tr>
+        </table>
+
     </div>
+</div>
 
     <script>
         window.addEventListener('load', () => {
