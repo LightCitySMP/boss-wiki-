@@ -23,7 +23,6 @@
             --text: #E8E2D5;
             --text-dim: rgba(232, 226, 213, 0.55);
             --text-muted: rgba(232, 226, 213, 0.3);
-            --red-bright: #E74C3C;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -578,28 +577,43 @@
             text-align: center;
         }
 
-        .footer-logo {
+        .ascension-glow {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
+            font-size: 2.2rem;
             font-weight: 700;
-            color: var(--gold);
-            margin-bottom: 0.3rem;
+            color: #ff2a2a;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5rem;
+            text-shadow:
+                0 0 10px rgba(255, 0, 0, 0.8),
+                0 -5px 15px rgba(200, 0, 0, 0.6),
+                0 -10px 20px rgba(100, 0, 0, 0.5),
+                0 -15px 30px rgba(0, 0, 0, 0.9);
+            animation: pulseSmoke 3s infinite alternate;
+        }
+
+        @keyframes pulseSmoke {
+            0% {
+                text-shadow:
+                    0 0 10px rgba(255, 0, 0, 0.8),
+                    0 -5px 15px rgba(200, 0, 0, 0.6),
+                    0 -10px 20px rgba(100, 0, 0, 0.5),
+                    0 -15px 30px rgba(0, 0, 0, 0.9);
+            }
+            100% {
+                text-shadow:
+                    0 0 15px rgba(255, 50, 50, 0.9),
+                    0 -8px 20px rgba(220, 20, 20, 0.7),
+                    0 -12px 25px rgba(120, 0, 0, 0.7),
+                    0 -20px 40px rgba(0, 0, 0, 1);
+            }
         }
 
         .footer-credits {
             font-size: 0.82rem;
             color: var(--text-muted);
             margin-bottom: 2rem;
-        }
-
-        .overline.Ascension {
-            color: var(--gold-bright);
-            text-shadow:
-                0 0 5px var(--red-bright),
-                0 0 10px var(--red-bright),
-                0 0 15px rgba(231, 76, 60, 0.6),
-                0 0 20px rgba(0, 0, 0, 0.8),
-                0 0 25px rgba(0, 0, 0, 0.6);
         }
 
         .reveal {
@@ -654,7 +668,7 @@
     </nav>
 
     <section class="hero">
-        <p class="hero-eyebrow Ascension">Ascension</p>
+        <p class="hero-eyebrow">Season 5 · Official Website</p>
         <h1 class="hero-title">
             <span class="line1">LightCitySMP</span>
         </h1>
@@ -744,7 +758,7 @@
     <footer>
         <div class="container">
             <div class="footer-inner">
-                <div class="footer-logo">LightCitySMP</div>
+                <div class="ascension-glow">Ascension</div>
                 <p class="footer-credits">Developer credits: Sam, Fanta, George767</p>
             </div>
         </div>
