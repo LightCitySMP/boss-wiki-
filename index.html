@@ -23,6 +23,7 @@
             --text: #E8E2D5;
             --text-dim: rgba(232, 226, 213, 0.55);
             --text-muted: rgba(232, 226, 213, 0.3);
+            --red-bright: #E74C3C;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -585,19 +586,20 @@
             margin-bottom: 0.3rem;
         }
 
-        .footer-season {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.7rem;
-            letter-spacing: 0.2em;
-            color: var(--gold-dim);
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-
         .footer-credits {
             font-size: 0.82rem;
             color: var(--text-muted);
             margin-bottom: 2rem;
+        }
+
+        .overline.Ascension {
+            color: var(--gold-bright);
+            text-shadow:
+                0 0 5px var(--red-bright),
+                0 0 10px var(--red-bright),
+                0 0 15px rgba(231, 76, 60, 0.6),
+                0 0 20px rgba(0, 0, 0, 0.8),
+                0 0 25px rgba(0, 0, 0, 0.6);
         }
 
         .reveal {
@@ -652,7 +654,7 @@
     </nav>
 
     <section class="hero">
-        <p class="hero-eyebrow">Season 5 · Official Website</p>
+        <p class="hero-eyebrow Ascension">Ascension</p>
         <h1 class="hero-title">
             <span class="line1">LightCitySMP</span>
         </h1>
@@ -743,7 +745,6 @@
         <div class="container">
             <div class="footer-inner">
                 <div class="footer-logo">LightCitySMP</div>
-                <div class="footer-season">Season 5</div>
                 <p class="footer-credits">Developer credits: Sam, Fanta, George767</p>
             </div>
         </div>
