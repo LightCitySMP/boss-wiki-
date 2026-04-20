@@ -62,156 +62,95 @@
         nav {
             position: fixed; top: 0; width: 100%; z-index: 1000;
             padding: 1.2rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display: flex; justify-content: space-between; align-items: center;
             background: rgba(8,8,8,0.88);
             backdrop-filter: blur(24px);
             border-bottom: 1px solid var(--border);
             transition: padding 0.3s ease, box-shadow 0.3s ease;
         }
 
-        nav.scrolled {
-            padding: 0.9rem 5%;
-            box-shadow: 0 4px 40px rgba(0,0,0,0.7);
-        }
+        nav.scrolled { padding: 0.9rem 5%; box-shadow: 0 4px 40px rgba(0,0,0,0.7); }
 
         .logo {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--gold);
-            text-decoration: none;
+            font-size: 1.5rem; font-weight: 700;
+            color: var(--gold); text-decoration: none;
             letter-spacing: 0.03em;
-            display: flex;
-            align-items: center;
-            gap: 0.4rem;
+            display: flex; align-items: center; gap: 0.4rem;
         }
 
         .logo .bolt { filter: drop-shadow(0 0 6px var(--gold)); }
 
-        .nav-icons {
-            display: flex;
-            gap: 0.6rem;
-            align-items: center;
-        }
+        .nav-icons { display: flex; gap: 0.6rem; align-items: center; }
 
         .nav-icon-btn {
             width: 44px; height: 44px;
-            background: var(--surface);
-            border: 1px solid var(--border);
+            background: var(--surface); border: 1px solid var(--border);
             border-radius: 10px;
             display: flex; align-items: center; justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
+            cursor: pointer; transition: all 0.3s ease; text-decoration: none;
         }
 
         .nav-icon-btn:hover {
-            background: var(--gold-trace);
-            border-color: var(--border-strong);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(212,168,67,0.15);
+            background: var(--gold-trace); border-color: var(--border-strong);
+            transform: translateY(-2px); box-shadow: 0 6px 20px rgba(212,168,67,0.15);
         }
 
         .nav-icon-btn.active {
-            background: var(--gold-trace);
-            border-color: var(--gold);
+            background: var(--gold-trace); border-color: var(--gold);
             box-shadow: 0 0 16px rgba(212,168,67,0.2);
         }
 
-        .nav-icon-btn svg {
-            width: 20px; height: 20px;
-            fill: var(--gold);
-            transition: transform 0.25s ease;
-        }
-
+        .nav-icon-btn svg { width: 20px; height: 20px; fill: var(--gold); transition: transform 0.25s ease; }
         .nav-icon-btn:hover svg { transform: scale(1.1); }
 
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 110px 5% 6rem;
-        }
+        .container { max-width: 960px; margin: 0 auto; padding: 110px 5% 6rem; }
 
-        .page-header {
-            text-align: center;
-            margin-bottom: 5rem;
-        }
+        .page-header { text-align: center; margin-bottom: 5rem; }
 
         .page-title {
             font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(2.2rem, 5vw, 3.5rem);
-            font-weight: 700;
-            color: var(--gold-bright);
-            line-height: 1.1;
-            letter-spacing: -0.01em;
-            margin-bottom: 0.5rem;
+            font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 700;
+            color: var(--gold-bright); line-height: 1.1;
+            letter-spacing: -0.01em; margin-bottom: 0.5rem;
         }
 
         .page-subtitle {
             font-family: 'Cormorant Garamond', serif;
             font-size: clamp(1rem, 2vw, 1.25rem);
-            color: var(--text-dim);
-            font-style: italic;
-            margin-bottom: 2rem;
+            color: var(--text-dim); font-style: italic; margin-bottom: 2rem;
         }
 
         .title-rule {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            justify-content: center;
-            margin: 1.5rem 0;
+            display: flex; align-items: center; gap: 1rem;
+            justify-content: center; margin: 1.5rem 0;
         }
 
         .title-rule span {
-            height: 1px;
-            width: 80px;
+            height: 1px; width: 80px;
             background: linear-gradient(90deg, transparent, var(--gold-dim));
         }
 
-        .title-rule span:last-child {
-            background: linear-gradient(90deg, var(--gold-dim), transparent);
-        }
-
-        .title-rule em {
-            color: var(--gold);
-            font-style: normal;
-            font-size: 0.9rem;
-        }
+        .title-rule span:last-child { background: linear-gradient(90deg, var(--gold-dim), transparent); }
+        .title-rule em { color: var(--gold); font-style: normal; font-size: 0.9rem; }
 
         .intro-text {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.15rem;
-            color: var(--text-dim);
-            max-width: 640px;
-            margin: 0 auto;
-            line-height: 1.85;
+            font-size: 1.15rem; color: var(--text-dim);
+            max-width: 640px; margin: 0 auto; line-height: 1.85;
         }
 
-        .sep {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin: 2.5rem 0;
-        }
+        .sep { display: flex; align-items: center; gap: 1rem; margin: 2.5rem 0; }
 
         .sep-line {
-            flex: 1;
-            height: 1px;
+            flex: 1; height: 1px;
             background: linear-gradient(90deg, transparent, var(--border-strong), transparent);
         }
 
-        .sep-glyph {
-            font-size: 0.75rem;
-            color: var(--gold-dim);
-            letter-spacing: 0.1em;
-        }
+        .sep-glyph { font-size: 0.75rem; color: var(--gold-dim); letter-spacing: 0.1em; }
 
         .cat-block {
-            margin-bottom: 2rem;
-            opacity: 0;
+            margin-bottom: 2rem; opacity: 0;
             transform: translateY(20px);
             animation: riseIn 0.5s ease forwards;
         }
@@ -219,63 +158,43 @@
         .cat-block:nth-child(1) { animation-delay: 0.05s; }
         .cat-block:nth-child(2) { animation-delay: 0.12s; }
         .cat-block:nth-child(3) { animation-delay: 0.19s; }
+        .cat-block:nth-child(4) { animation-delay: 0.26s; }
 
-        @keyframes riseIn {
-            to { opacity: 1; transform: translateY(0); }
-        }
+        @keyframes riseIn { to { opacity: 1; transform: translateY(0); } }
 
         .cat-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
+            display: flex; align-items: center; gap: 1rem;
             padding: 1.1rem 1.6rem;
-            background: var(--surface);
-            border: 1px solid var(--border);
+            background: var(--surface); border: 1px solid var(--border);
             border-left: 3px solid var(--gold-dim);
             border-radius: 8px 8px 0 0;
             transition: border-color 0.2s ease, background 0.2s ease;
         }
 
-        .cat-header:hover {
-            background: var(--surface-hover);
-            border-left-color: var(--gold);
-        }
+        .cat-header:hover { background: var(--surface-hover); border-left-color: var(--gold); }
 
         .ch-icon { font-size: 1.4rem; line-height: 1; filter: drop-shadow(0 0 4px rgba(212,168,67,0.4)); }
 
         .ch-label {
-            font-family: 'Syne', sans-serif;
-            font-size: 0.95rem;
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: var(--gold-bright);
-            flex: 1;
+            font-family: 'Syne', sans-serif; font-size: 0.95rem; font-weight: 700;
+            letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold-bright); flex: 1;
         }
 
         .ch-tag {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.68rem;
-            color: var(--gold-dim);
-            background: rgba(212,168,67,0.08);
-            padding: 0.2rem 0.6rem;
-            border-radius: 20px;
-            border: 1px solid rgba(212,168,67,0.15);
-            letter-spacing: 0.05em;
+            font-family: 'JetBrains Mono', monospace; font-size: 0.68rem;
+            color: var(--gold-dim); background: rgba(212,168,67,0.08);
+            padding: 0.2rem 0.6rem; border-radius: 20px;
+            border: 1px solid rgba(212,168,67,0.15); letter-spacing: 0.05em;
         }
 
         .cat-body {
-            border: 1px solid var(--border);
-            border-top: none;
+            border: 1px solid var(--border); border-top: none;
             border-radius: 0 0 8px 8px;
-            background: rgba(255,255,255,0.012);
-            overflow: hidden;
+            background: rgba(255,255,255,0.012); overflow: hidden;
         }
 
-        .limit-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+        /* ── Item Limits ── */
+        .limit-table { width: 100%; border-collapse: collapse; }
 
         .limit-table thead tr {
             background: rgba(212,168,67,0.05);
@@ -283,75 +202,42 @@
         }
 
         .limit-table th {
-            padding: 0.8rem 1.6rem;
-            text-align: left;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.7rem;
-            font-weight: 500;
-            letter-spacing: 0.12em;
-            color: var(--gold-dim);
-            text-transform: uppercase;
+            padding: 0.8rem 1.6rem; text-align: left;
+            font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;
+            font-weight: 500; letter-spacing: 0.12em; color: var(--gold-dim); text-transform: uppercase;
         }
 
         .limit-table td {
-            padding: 0.9rem 1.6rem;
-            font-size: 0.9rem;
+            padding: 0.9rem 1.6rem; font-size: 0.9rem;
             color: var(--text-dim);
             border-bottom: 1px solid rgba(255,255,255,0.04);
             vertical-align: middle;
         }
 
         .limit-table tr:last-child td { border-bottom: none; }
-
         .limit-table tr:hover td { background: rgba(212,168,67,0.025); }
 
-        .item-name {
-            display: flex;
-            align-items: center;
-            gap: 0.7rem;
-            font-weight: 500;
-            color: var(--text);
-        }
+        .item-name { display: flex; align-items: center; gap: 0.7rem; font-weight: 500; color: var(--text); }
 
-        .custom-emoji {
-            width: 1.3em;
-            height: 1.3em;
-            vertical-align: middle;
-            transform: translateY(-1px);
-        }
+        .custom-emoji { width: 1.3em; height: 1.3em; vertical-align: middle; transform: translateY(-1px); }
 
         .item-scope {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            display: block;
-            margin-top: 0.15rem;
+            font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;
+            color: var(--text-muted); display: block; margin-top: 0.15rem;
         }
 
         .limit-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.82rem;
-            font-weight: 500;
-            background: rgba(212,168,67,0.1);
-            color: var(--gold-bright);
-            border: 1px solid rgba(212,168,67,0.25);
-            padding: 0.25rem 0.7rem;
-            border-radius: 4px;
+            display: inline-flex; align-items: center; gap: 0.3rem;
+            font-family: 'JetBrains Mono', monospace; font-size: 0.82rem; font-weight: 500;
+            background: rgba(212,168,67,0.1); color: var(--gold-bright);
+            border: 1px solid rgba(212,168,67,0.25); padding: 0.25rem 0.7rem; border-radius: 4px;
         }
 
-        .ban-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 0;
-        }
+        /* ── Ban Grid ── */
+        .ban-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0; }
 
         .ban-item {
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
+            display: flex; align-items: center; gap: 0.8rem;
             padding: 1rem 1.6rem;
             border-bottom: 1px solid rgba(255,255,255,0.04);
             border-right: 1px solid rgba(255,255,255,0.04);
@@ -359,30 +245,20 @@
         }
 
         .ban-item:hover { background: rgba(192,57,43,0.05); }
-
-        .ban-name {
-            font-size: 0.9rem;
-            color: var(--text-dim);
-        }
+        .ban-name { font-size: 0.9rem; color: var(--text-dim); }
 
         .ban-pill {
             margin-left: auto;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.62rem;
-            letter-spacing: 0.08em;
-            color: var(--red-bright);
-            background: var(--red-trace);
-            border: 1px solid rgba(192,57,43,0.3);
-            padding: 0.15rem 0.5rem;
-            border-radius: 3px;
-            text-transform: uppercase;
-            white-space: nowrap;
+            font-family: 'JetBrains Mono', monospace; font-size: 0.62rem;
+            letter-spacing: 0.08em; color: var(--red-bright);
+            background: var(--red-trace); border: 1px solid rgba(192,57,43,0.3);
+            padding: 0.15rem 0.5rem; border-radius: 3px;
+            text-transform: uppercase; white-space: nowrap;
         }
 
+        /* ── Enchant Rows ── */
         .ench-row {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
+            display: flex; align-items: center; gap: 1rem;
             padding: 1rem 1.6rem;
             border-bottom: 1px solid rgba(255,255,255,0.04);
             transition: background 0.2s ease;
@@ -392,97 +268,139 @@
         .ench-row:hover { background: rgba(212,168,67,0.025); }
 
         .ench-name {
-            flex: 1;
-            font-size: 0.9rem;
-            color: var(--text-dim);
-            display: flex;
-            align-items: center;
-            gap: 0.7rem;
+            flex: 1; font-size: 0.9rem; color: var(--text-dim);
+            display: flex; align-items: center; gap: 0.6rem;
         }
 
         .ench-name strong { color: var(--text); }
 
-        .ench-bar-wrap {
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
+        .ench-icons { display: flex; align-items: center; }
+        .ench-icons img:not(:first-child) { margin-left: -6px; }
 
-        .ench-pips {
-            display: flex;
-            gap: 4px;
-        }
+        .ench-bar-wrap { display: flex; align-items: center; gap: 0.8rem; }
+
+        .ench-pips { display: flex; gap: 4px; }
 
         .pip {
-            width: 14px;
-            height: 14px;
-            border-radius: 3px;
+            width: 14px; height: 14px; border-radius: 3px;
             border: 1px solid rgba(212,168,67,0.3);
             background: rgba(212,168,67,0.08);
             transition: background 0.2s;
         }
 
         .pip.filled {
-            background: var(--gold);
-            border-color: var(--gold);
+            background: var(--gold); border-color: var(--gold);
             box-shadow: 0 0 6px rgba(212,168,67,0.4);
         }
 
         .ench-max {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            color: var(--gold);
-            min-width: 28px;
-            text-align: right;
+            font-family: 'JetBrains Mono', monospace; font-size: 0.8rem;
+            color: var(--gold); min-width: 28px; text-align: right;
         }
 
         .ench-vanilla {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.7rem;
-            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;
+            color: var(--text-muted); background: rgba(255,255,255,0.04);
+            padding: 0.15rem 0.5rem; border-radius: 3px; white-space: nowrap;
+        }
+
+        /* ── Custom Recipes ── */
+        .recipes-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+        }
+
+        .recipe-card {
+            padding: 1.8rem 1.4rem;
+            border-right: 1px solid rgba(255,255,255,0.04);
+            display: flex; flex-direction: column;
+            align-items: center; gap: 1.2rem;
+            transition: background 0.2s ease;
+        }
+
+        .recipe-card:last-child { border-right: none; }
+        .recipe-card:hover { background: rgba(212,168,67,0.02); }
+
+        .recipe-name {
+            font-family: 'Syne', sans-serif;
+            font-size: 0.78rem; font-weight: 700;
+            letter-spacing: 0.08em; text-transform: uppercase;
+            color: var(--gold-bright); text-align: center;
+        }
+
+        .craft-wrap { display: flex; align-items: center; gap: 0.7rem; }
+
+        .craft-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 34px);
+            grid-template-rows: repeat(3, 34px);
+            gap: 3px;
+            background: rgba(0,0,0,0.5);
+            padding: 5px;
+            border-radius: 6px;
+            border: 1px solid rgba(212,168,67,0.2);
+        }
+
+        .craft-slot {
+            width: 34px; height: 34px;
             background: rgba(255,255,255,0.04);
-            padding: 0.15rem 0.5rem;
+            border: 1px solid rgba(255,255,255,0.07);
             border-radius: 3px;
-            white-space: nowrap;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1rem; line-height: 1;
         }
 
+        .craft-slot img {
+            width: 24px; height: 24px;
+            object-fit: contain;
+            image-rendering: pixelated;
+        }
+
+        .craft-slot.filled {
+            background: rgba(212,168,67,0.06);
+            border-color: rgba(212,168,67,0.18);
+        }
+
+        .craft-arrow { color: var(--gold-dim); font-size: 1.1rem; flex-shrink: 0; }
+
+        .craft-result {
+            width: 42px; height: 42px;
+            background: rgba(212,168,67,0.08);
+            border: 1px solid rgba(212,168,67,0.3);
+            border-radius: 6px;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .craft-result img {
+            width: 30px; height: 30px;
+            object-fit: contain;
+            image-rendering: pixelated;
+        }
+
+        /* ── Back Link ── */
         .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.78rem;
-            letter-spacing: 0.05em;
-            color: var(--gold-dim);
-            text-decoration: none;
-            margin-bottom: 3rem;
-            transition: color 0.2s ease, gap 0.2s ease;
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+            letter-spacing: 0.05em; color: var(--gold-dim); text-decoration: none;
+            margin-bottom: 3rem; transition: color 0.2s ease, gap 0.2s ease;
         }
 
-        .back-link:hover {
-            color: var(--gold);
-            gap: 0.8rem;
-        }
+        .back-link:hover { color: var(--gold); gap: 0.8rem; }
 
+        /* ── Footer ── */
         footer {
-            text-align: center;
-            padding: 3rem 0;
-            border-top: 1px solid var(--border);
-            margin-top: 4rem;
+            text-align: center; padding: 3rem 0;
+            border-top: 1px solid var(--border); margin-top: 4rem;
         }
 
         .footer-glyph {
-            color: var(--gold-dim);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.75rem;
-            letter-spacing: 0.2em;
-            margin-bottom: 1rem;
+            color: var(--gold-dim); font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem; letter-spacing: 0.2em; margin-bottom: 1rem;
         }
 
-        .footer-text {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
+        .footer-text { font-size: 0.85rem; color: var(--text-muted); }
 
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: var(--ink); }
@@ -495,6 +413,9 @@
             .nav-icon-btn { width: 40px; height: 40px; }
             .ban-grid { grid-template-columns: 1fr; }
             .ench-bar-wrap { gap: 0.5rem; }
+            .recipes-grid { grid-template-columns: 1fr; }
+            .recipe-card { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.04); }
+            .recipe-card:last-child { border-bottom: none; }
         }
     </style>
     <base target="_blank">
@@ -540,6 +461,7 @@
 
         <div class="sep"><div class="sep-line"></div><div class="sep-glyph">✦</div><div class="sep-line"></div></div>
 
+        <!-- Item Limits -->
         <div class="cat-block">
             <div class="cat-header">
                 <span class="ch-icon">📦</span>
@@ -560,10 +482,7 @@
                             <td>
                                 <div class="item-name">
                                     <img src="https://cdn.discordapp.com/emojis/1495789623144878220.png" class="custom-emoji" alt="Mace">
-                                    <div>
-                                        <div>Mace</div>
-                                        <span class="item-scope">Shared limit</span>
-                                    </div>
+                                    <div><div>Mace</div><span class="item-scope">Shared limit</span></div>
                                 </div>
                             </td>
                             <td><span class="limit-badge">3 total — server-wide</span></td>
@@ -573,10 +492,7 @@
                             <td>
                                 <div class="item-name">
                                     <img src="https://cdn.discordapp.com/emojis/1495085043222057131.png" class="custom-emoji" alt="Ender Pearl">
-                                    <div>
-                                        <div>Ender Pearl</div>
-                                        <span class="item-scope">Per player</span>
-                                    </div>
+                                    <div><div>Ender Pearl</div><span class="item-scope">Per player</span></div>
                                 </div>
                             </td>
                             <td><span class="limit-badge">×16</span></td>
@@ -586,10 +502,7 @@
                             <td>
                                 <div class="item-name">
                                     <img src="https://cdn.discordapp.com/emojis/1495789756955496458.png" class="custom-emoji" alt="Enchanted Golden Apple">
-                                    <div>
-                                        <div>Enchanted Golden Apple</div>
-                                        <span class="item-scope">Per player</span>
-                                    </div>
+                                    <div><div>Enchanted Golden Apple</div><span class="item-scope">Per player</span></div>
                                 </div>
                             </td>
                             <td><span class="limit-badge">×5</span></td>
@@ -599,10 +512,7 @@
                             <td>
                                 <div class="item-name">
                                     <img src="https://cdn.discordapp.com/emojis/1495789702874271896.png" class="custom-emoji" alt="Totem of Undying">
-                                    <div>
-                                        <div>Totem of Undying</div>
-                                        <span class="item-scope">Per player</span>
-                                    </div>
+                                    <div><div>Totem of Undying</div><span class="item-scope">Per player</span></div>
                                 </div>
                             </td>
                             <td><span class="limit-badge">×1</span></td>
@@ -615,6 +525,7 @@
 
         <div class="sep"><div class="sep-line"></div><div class="sep-glyph">◆</div><div class="sep-line"></div></div>
 
+        <!-- Item Bans -->
         <div class="cat-block">
             <div class="cat-header">
                 <span class="ch-icon">🚫</span>
@@ -649,6 +560,7 @@
 
         <div class="sep"><div class="sep-line"></div><div class="sep-glyph">◆</div><div class="sep-line"></div></div>
 
+        <!-- Enchantment Caps -->
         <div class="cat-block">
             <div class="cat-header">
                 <span class="ch-icon">✨</span>
@@ -656,9 +568,12 @@
                 <span class="ch-tag">max level</span>
             </div>
             <div class="cat-body">
+                <!-- Protection -->
                 <div class="ench-row">
                     <div class="ench-name">
-                        <img src="https://cdn.discordapp.com/emojis/1495789809921294487.png" class="custom-emoji" alt="Protection">
+                        <div class="ench-icons">
+                            <img src="https://cdn.discordapp.com/emojis/1495789809921294487.png" class="custom-emoji" alt="Protection">
+                        </div>
                         <div><strong>Protection</strong></div>
                     </div>
                     <div class="ench-bar-wrap">
@@ -672,9 +587,12 @@
                         <span class="ench-vanilla">vanilla IV</span>
                     </div>
                 </div>
+                <!-- Sharpness -->
                 <div class="ench-row">
                     <div class="ench-name">
-                        <img src="https://cdn.discordapp.com/emojis/1495811322611241041.png" class="custom-emoji" alt="Sharpness">
+                        <div class="ench-icons">
+                            <img src="https://cdn.discordapp.com/emojis/1495811322611241041.png" class="custom-emoji" alt="Sharpness">
+                        </div>
                         <div><strong>Sharpness</strong></div>
                     </div>
                     <div class="ench-bar-wrap">
@@ -688,6 +606,129 @@
                         <span class="ench-max">IV</span>
                         <span class="ench-vanilla">vanilla V</span>
                     </div>
+                </div>
+                <!-- Density -->
+                <div class="ench-row">
+                    <div class="ench-name">
+                        <div class="ench-icons">
+                            <img src="https://cdn.discordapp.com/emojis/1495789623144878220.png" class="custom-emoji" alt="Mace">
+                            <img src="https://cdn.discordapp.com/emojis/1495789623144878220.png" class="custom-emoji" alt="Mace">
+                        </div>
+                        <div><strong>Density</strong></div>
+                    </div>
+                    <div class="ench-bar-wrap">
+                        <div class="ench-pips">
+                            <div class="pip filled"></div>
+                            <div class="pip filled"></div>
+                            <div class="pip filled"></div>
+                            <div class="pip"></div>
+                            <div class="pip"></div>
+                        </div>
+                        <span class="ench-max">III</span>
+                        <span class="ench-vanilla">vanilla V</span>
+                    </div>
+                </div>
+                <!-- Breach -->
+                <div class="ench-row">
+                    <div class="ench-name">
+                        <div class="ench-icons">
+                            <img src="https://cdn.discordapp.com/emojis/1495789623144878220.png" class="custom-emoji" alt="Mace">
+                            <img src="https://cdn.discordapp.com/emojis/1495789623144878220.png" class="custom-emoji" alt="Mace">
+                        </div>
+                        <div><strong>Breach</strong></div>
+                    </div>
+                    <div class="ench-bar-wrap">
+                        <div class="ench-pips">
+                            <div class="pip filled"></div>
+                            <div class="pip filled"></div>
+                            <div class="pip"></div>
+                            <div class="pip"></div>
+                        </div>
+                        <span class="ench-max">II</span>
+                        <span class="ench-vanilla">vanilla IV</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sep"><div class="sep-line"></div><div class="sep-glyph">◆</div><div class="sep-line"></div></div>
+
+        <!-- Custom Recipes -->
+        <div class="cat-block">
+            <div class="cat-header">
+                <span class="ch-icon">📋</span>
+                <span class="ch-label">Custom Recipes</span>
+                <span class="ch-tag">crafting</span>
+            </div>
+            <div class="cat-body">
+                <div class="recipes-grid">
+
+                    <!-- Golden Apple -->
+                    <div class="recipe-card">
+                        <div class="recipe-name">Golden Apple</div>
+                        <div class="craft-wrap">
+                            <div class="craft-grid">
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Ingot_Gold_JE4_BE2.png" alt="Gold Ingot"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Ingot_Gold_JE4_BE2.png" alt="Gold Ingot"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Ingot_Gold_JE4_BE2.png" alt="Gold Ingot"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Ingot_Gold_JE4_BE2.png" alt="Gold Ingot"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Apple_JE3_BE3.png" alt="Apple"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Ingot_Gold_JE4_BE2.png" alt="Gold Ingot"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Ingot_Gold_JE4_BE2.png" alt="Gold Ingot"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Ingot_Gold_JE4_BE2.png" alt="Gold Ingot"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Ingot_Gold_JE4_BE2.png" alt="Gold Ingot"></div>
+                            </div>
+                            <span class="craft-arrow">›</span>
+                            <div class="craft-result">
+                                <img src="https://minecraft.wiki/images/Golden_Apple_JE2_BE2.png" alt="Golden Apple">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Enchanted Golden Apple -->
+                    <div class="recipe-card">
+                        <div class="recipe-name">Enchanted Golden Apple</div>
+                        <div class="craft-wrap">
+                            <div class="craft-grid">
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Block_of_Gold_JE7_BE5.png" alt="Gold Block"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Block_of_Gold_JE7_BE5.png" alt="Gold Block"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Block_of_Gold_JE7_BE5.png" alt="Gold Block"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Block_of_Gold_JE7_BE5.png" alt="Gold Block"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Golden_Apple_JE2_BE2.png" alt="Golden Apple"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Block_of_Gold_JE7_BE5.png" alt="Gold Block"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Block_of_Gold_JE7_BE5.png" alt="Gold Block"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Block_of_Gold_JE7_BE5.png" alt="Gold Block"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/Block_of_Gold_JE7_BE5.png" alt="Gold Block"></div>
+                            </div>
+                            <span class="craft-arrow">›</span>
+                            <div class="craft-result">
+                                <img src="https://cdn.discordapp.com/emojis/1495789756955496458.png" alt="Enchanted Golden Apple">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cobweb -->
+                    <div class="recipe-card">
+                        <div class="recipe-name">Cobweb</div>
+                        <div class="craft-wrap">
+                            <div class="craft-grid">
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/String_JE2_BE2.png" alt="String"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/String_JE2_BE2.png" alt="String"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/String_JE2_BE2.png" alt="String"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/String_JE2_BE2.png" alt="String"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/String_JE2_BE2.png" alt="String"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/String_JE2_BE2.png" alt="String"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/String_JE2_BE2.png" alt="String"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/String_JE2_BE2.png" alt="String"></div>
+                                <div class="craft-slot filled"><img src="https://minecraft.wiki/images/String_JE2_BE2.png" alt="String"></div>
+                            </div>
+                            <span class="craft-arrow">›</span>
+                            <div class="craft-result">
+                                <img src="https://minecraft.wiki/images/Cobweb_JE2_BE2.png" alt="Cobweb">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
