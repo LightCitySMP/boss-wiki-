@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rank Perks | LightCitySMP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4A843;
+            --gold-bright: #F0C060;
+            --gold-dim: #8A6B28;
+            --gold-trace: rgba(212, 168, 67, 0.12);
+            --ink: #080808;
+            --ink-2: #0F0F0D;
+            --surface: rgba(255,255,255,0.025);
+            --border: rgba(212, 168, 67, 0.14);
+            --border-strong: rgba(212, 168, 67, 0.35);
+            --text: #E8E2D5;
+            --text-dim: rgba(232, 226, 213, 0.55);
+            --purple-glow: #a855f7;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Syne', sans-serif;
+            background: var(--ink);
+            color: var(--text);
+            line-height: 1.6;
+            padding-top: 100px;
+        }
+
+        .bg-layer {
+            position: fixed; inset: 0; z-index: -2;
+            background: radial-gradient(ellipse 80% 60% at 50% 15%, rgba(212,168,67,0.05) 0%, transparent 55%), var(--ink);
+        }
+
+        nav {
+            position: fixed; top: 0; width: 100%; z-index: 1000;
+            padding: 1.2rem 5%;
+            display: flex; justify-content: space-between; align-items: center;
+            background: rgba(8,8,8,0.88);
+            backdrop-filter: blur(24px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(212, 168, 67, 0.5);
+        }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 0 5% 5rem; }
+
+        .rank-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .rank-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            color: var(--gold-bright);
+            margin-bottom: 0.5rem;
+            display: flex; align-items: center; gap: 0.8rem;
+        }
+
+        .rank-id {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--gold-dim);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .rank-divider {
+            height: 1px;
+            background: linear-gradient(90deg, var(--gold-dim), transparent);
+            margin: 1.5rem 0;
+            opacity: 0.4;
+        }
+
+        .rank-section-title {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        ul { list-style: none; }
+        li {
+            margin-bottom: 0.8rem;
+            display: flex; align-items: center; gap: 0.6rem;
+            color: var(--text-dim);
+        }
+
+        .bullet-arrow { color: var(--gold); font-size: 1.1rem; }
+
+        .coming-soon {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .coming-soon h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            color: var(--purple-glow);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
+            animation: pulsePurple 3s infinite alternate;
+        }
+
+        @keyframes pulsePurple {
+            0% { text-shadow: 0 0 10px rgba(168, 85, 247, 0.4); }
+            100% { text-shadow: 0 0 25px rgba(168, 85, 247, 0.8); }
+        }
+
+        .loot-image {
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid var(--border-strong);
+            border-radius: 8px;
+            margin-top: 3rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--gold-dim);
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+
+        .back-btn:hover { color: var(--gold); }
+    </style>
+</head>
+<body>
+    <div class="bg-layer"></div>
+
+    <nav>
+        <a href="index.html" class="logo" target="_self">LightCitySMP</a>
+    </nav>
+
+    <div class="container">
+        <a href="index.html" class="back-btn" target="_self">← Back to Wiki</a>
+
+        <div class="rank-card">
+            <h1 class="rank-title">VIP Rank <span style="font-size: 1.5rem;">👑</span></h1>
+            <span class="rank-id">✤ ═ 1493925391679881226 ═ ✤</span>
+            
+            <span class="rank-section-title">Requirements</span>
+            <ul>
+                <li><span class="bullet-arrow">➡</span> Invite 5 active friends (no alts)</li>
+                <li><span class="bullet-arrow">➡</span> 5h+ playtime on the server</li>
+            </ul>
+
+            <div class="rank-divider"></div>
+
+            <span class="rank-section-title">Perks</span>
+            <ul>
+                <li><span class="bullet-arrow">➤</span> Receive an in-game prefix</li>
+                <li><span class="bullet-arrow">➤</span> 5 home limit</li>
+                <li><span class="bullet-arrow">➤</span> Receive 1x loot drop</li>
+            </ul>
+        </div>
+
+        <div class="rank-card">
+            <h1 class="rank-title">Booster Rank <span style="font-size: 1.5rem;">🚀</span></h1>
+            <span class="rank-id">✤ ═ 1333110873937412190 ═ ✤</span>
+            
+            <span class="rank-section-title">Requirements</span>
+            <ul>
+                <li><span class="bullet-arrow">➡</span> Boost once or more</li>
+            </ul>
+
+            <div class="rank-divider"></div>
+
+            <span class="rank-section-title">Perks</span>
+            <ul>
+                <li><span class="bullet-arrow">➤</span> In-game prefix (neon pink)</li>
+                <li><span class="bullet-arrow">➤</span> Receive 2x loot drops</li>
+                <li><span class="bullet-arrow">➤</span> 10 home limit</li>
+            </ul>
+        </div>
+
+        <div class="coming-soon">
+            <h2>Premium Ranks Coming Soon</h2>
+        </div>
+
+        <img src="image_899e6b.png" alt="LootBox Preview" class="loot-image">
+    </div>
+</body>
+</html>
