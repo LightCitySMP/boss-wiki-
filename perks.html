@@ -127,15 +127,17 @@
             100% { text-shadow: 0 0 25px rgba(168, 85, 247, 0.8); }
         }
 
-        .loot-image {
+        .loot-image-container {
             width: 100%;
-            max-width: 400px;
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        .loot-image {
+            max-width: 100%;
             border: 1px solid var(--border-strong);
             border-radius: 8px;
-            margin-top: 3rem;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .back-btn {
@@ -163,7 +165,7 @@
         <a href="index.html" class="back-btn" target="_self">← Back to Wiki</a>
 
         <div class="rank-card">
-            <h1 class="rank-title">VIP Rank <span style="font-size: 1.5rem;">👑</span></h1>
+            <h1 class="rank-title">VIP Rank 👑</h1>
             <span class="rank-id">✤ ═ 1493925391679881226 ═ ✤</span>
             
             <span class="rank-section-title">Requirements</span>
@@ -183,7 +185,7 @@
         </div>
 
         <div class="rank-card">
-            <h1 class="rank-title">Booster Rank <span style="font-size: 1.5rem;">🚀</span></h1>
+            <h1 class="rank-title">Booster Rank 🚀</h1>
             <span class="rank-id">✤ ═ 1333110873937412190 ═ ✤</span>
             
             <span class="rank-section-title">Requirements</span>
@@ -205,7 +207,9 @@
             <h2>Premium Ranks Coming Soon</h2>
         </div>
 
-        <img src="image_899e6b.png" alt="LootBox Preview" class="loot-image">
+        <div class="loot-image-container">
+            <img src="image_899e6b.png" alt="LootBox Preview" class="loot-image">
+        </div>
     </div>
 </body>
 </html>
